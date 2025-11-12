@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion - Club El Meta</title>
+    <link rel="stylesheet" href="../css/sesion.css">
+</head>
+<body>
+    <!--INICIAR SESION-->
+    <section class="sesion">
+        <h2>Iniciar Sesion</h2>
+        <div class="form-sesion">
+            <form action="check.js" method="POST">
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+
+                <label><input type="checkbox" id="remember">Recordarme</label>
+                <input type="submit" value="Iniciar Sesion">
+            </form>
+        </div>
+        <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+    </section>
+
+    <!--CIRCULO-->
+    <section class="circulo">
+        <div class="circulo-container">
+            <h3>¡BIENVENIDO!</h3>
+            <p>Ingresa tus datos personales para iniciar con tu cuenta</p>
+            <button onclick="window.location.href='registro.html'">Registrate</button>
+        </div>
+    </section>
+
+    <script src="../js/validacion.js"></script>
+
+</body>
+</html>
