@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Club El Meta</title>
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+    <!--REGISTRO-->
+    <section class="registro">
+        <h2>Registrarse</h2>
+        <div class="form-registro">
+            <form action="check.js" method="POST">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="celular">Número Celular</label>
+                <input type="text" id="celular" name="celular" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+
+                <input type="submit" value="Registrar">
+            </form>
+        </div>
+        <a href="sesion.html">¿Ya tienes una cuenta?</a>
+    </section>
+
+    <!--CIRCULO-->
+    <section class="circulo">
+        <div class="circulo-container">
+            <h3>¡HOLA NUEVO MIEMBRO!</h3>
+            <p>Completa tus datos personales para crear tu cuenta</p>
+            <button onclick="window.location.href='sesion.html'">Iniciar Sesión</button>
+        </div>
+    </section>
+
+    <script src="../js/validacion.js"></script>
+</body>
+</html>
